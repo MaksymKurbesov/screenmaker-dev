@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+<!--      <img src="bingx-deposit-iphone.png" style="position: absolute;top: 0;left: 0;opacity:0.4;mix-blend-mode: multiply"/>-->
+      <div class="inputs">
+        <div class="input">
+          <label for="template">Шаблон:</label>
+          <select id="template">
+            <optgroup label="BYBIT">
+              <option value="bybit-deposit-iphone">Депозит BYBIT IPHONE</option>
+              <option value="bybit-deposit-android">Депозит BYBIT ANDROID</option>
+              <option value="bybit-withdrawn-iphone">Вывод BYBIT IPHONE</option>
+              <option value="bybit-withdrawn-android">Вывод BYBIT ANDROID</option>
+            </optgroup>
+            <optgroup label="BINGX">
+              <option value="bingx-deposit-iphone">Депозит BINGX IPHONE</option>
+              <option value="bingx-withdrawn-iphone">Вывод BINGX IPHONE</option>
+            </optgroup>
+
+<!--            <option value="mexc-deposit-iphone">Депозит MEXC IPHONE</option>-->
+
+<!--            <option value="mexc-withdrawn-iphone">Вывод MEXC IPHONE</option>-->
+          </select>
+        </div>
+        <div class="input">
+          <label for="mobile-time">Время на телефоне:</label>
+          <input type="text" id="mobile-time"/>
+        </div>
+<!--        <div class="input">-->
+<!--          <label for="battery">Заряд батареи:</label>-->
+<!--          <input type="text" id="battery"/>-->
+<!--        </div>-->
+        <div class="input">
+          <label for="amount">Сумма: </label>
+          <input type="text" id="amount"/>
+        </div>
+        <div class="input commission">
+          <label for="commission">Комиссия: </label>
+          <input type="text" id="commission"/>
+        </div>
+        <div class="input">
+          <label for="time">Время: </label>
+          <input type="text" id="time"/>
+        </div>
+        <div class="input">
+          <label for="wallet">Адрес кошелька: </label>
+          <input type="text" id="wallet"/>
+        </div>
+  
+        <button id="get-screen">Обновить! <img src="./refresh.svg" width="20"/></button>
+        <button id="download-screen">Скачать! <img src="./download.svg" width="20"/></button>
+      </div>
+      
+      <div class="canvases">
+<!--        <button id="toggle-canvas">Спрятать</button>-->
+        <canvas id="example" width="576" height="1280"></canvas>
+        <canvas id="preview" width="384" height="853"></canvas>
+      </div>
+<!--      <canvas id="example" width="288" height="640"></canvas>-->
+    </div>
+  
+  </body>
+</html>
